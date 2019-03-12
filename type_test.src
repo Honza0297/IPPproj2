@@ -1,0 +1,6 @@
+.IPPcode19 #mel by vypsat true bool
+DEFVAR GF@a
+MOVE GF@a bool@true
+WRITE GF@a
+TYPE GF@a GF@a
+WRITE GF@a

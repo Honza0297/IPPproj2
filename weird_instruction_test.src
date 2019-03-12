@@ -1,0 +1,18 @@
+.IPPcode19 #should write a 97 Ahoj svete! 4 e
+DEFVAR GF@a
+INT2CHAR GF@a int@97
+WRITE GF@a
+
+STRI2INT GF@a GF@a int@0
+WRITE GF@a
+DEFVAR GF@b
+MOVE GF@a string@Ahoj\032
+MOVE GF@b string@svete!
+CONCAT GF@a GF@a GF@b
+WRITE GF@a
+
+STRLEN GF@a string@ahoj
+WRITE GF@a
+
+GETCHAR GF@a GF@b int@2
+WRITE GF@a

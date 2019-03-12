@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode19">
+<instruction order="1" opcode="LABEL">
+<arg1 type="label">fun1</arg1>
+</instruction>
+<instruction order="2" opcode="CREATEFRAME"/>
+<instruction order="3" opcode="PUSHFRAME"/>
+<instruction order="4" opcode="DEFVAR">
+<arg1 type="var">LF@a</arg1>
+</instruction>
+</program>

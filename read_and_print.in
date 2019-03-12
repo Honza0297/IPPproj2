@@ -1,0 +1,7 @@
+.IPPcode19
+DEFVAR GF@a
+WRITE string@Zadejte\032cislo:
+READ GF@a int
+WRITE string@Vase\032cislo\032je:
+WRITE GF@a
+EXIT int@0

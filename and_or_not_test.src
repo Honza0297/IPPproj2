@@ -1,0 +1,12 @@
+.IPPcode19
+DEFVAR GF@a
+AND GF@a bool@true bool@false
+WRITE GF@a
+OR GF@a bool@false bool@false
+WRITE GF@a
+NOT GF@a bool@false
+WRITE GF@a
+TYPE GF@a GF@a
+WRITE GF@a
+DPRINT int@32165432168435168135168879
+BREAK

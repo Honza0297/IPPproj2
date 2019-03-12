@@ -1,0 +1,14 @@
+.IPPcode19
+DEFVAR GF@vysledek
+LT GF@vysledek int@2 int@2
+WRITE GF@vysledek
+GT GF@vysledek int@2 int@2
+WRITE GF@vysledek
+EQ GF@vysledek int@2 int@2
+WRITE GF@vysledek
+LT GF@vysledek int@2 int@3
+WRITE GF@vysledek
+GT GF@vysledek int@2 int@3
+WRITE GF@vysledek
+EQ GF@vysledek int@2 int@3
+WRITE GF@vysledek

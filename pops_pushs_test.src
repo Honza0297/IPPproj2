@@ -1,0 +1,7 @@
+.IPPcode19 # melo by vypsat 2
+DEFVAR GF@a
+MOVE GF@a int@2
+PUSHS GF@a
+DEFVAR GF@var
+POPS GF@var
+WRITE GF@var
