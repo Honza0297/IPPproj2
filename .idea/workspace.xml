@@ -2,30 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99238181-5da9-4339-81f3-306c8b776604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interpret_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TF_LF_test.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TF_LF_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/and_or_not_test.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/and_or_not_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dekleet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gt_lt_eq_test.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gt_lt_eq_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/frame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interpret.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpret.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pops_pushs_test.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pops_pushs_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_and_print.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/short_cycle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudeliche.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_read_write.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_lf_test_2.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_lf_test_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/type_test.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/type_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weird_instruction_test.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weird_instruction_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_test.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_test.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_test.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TF_LF_test.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TF_LF_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/and_or_not_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/and_or_not_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/call_return_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/call_return_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gt_lt_eq_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/gt_lt_eq_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pops_pushs_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pops_pushs_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/read_and_print.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/short_cycle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sudeliche.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_read_write.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tf_lf_test_2.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tf_lf_test_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/type_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/type_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/weird_instruction_test.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/weird_instruction_test.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +40,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/IPPproj2$IPPproj2.coverage" NAME="IPPproj2 Coverage Results" MODIFIED="1553946283834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IPPproj2$IPPproj2.coverage" NAME="IPPproj2 Coverage Results" MODIFIED="1553958521755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-817913470">
@@ -54,36 +60,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="13" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="13" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
-          <entry key="py" value="22372" />
+          <entry key="dummy" value="19" />
+          <entry key="py" value="23424" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="22372" />
+          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="Python" value="23424" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            <state relative-caret-position="128">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -91,14 +102,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interpret.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interpret_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2431">
-              <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+            <state relative-caret-position="218">
+              <caret line="476" column="59" selection-start-line="476" selection-start-column="59" selection-end-line="476" selection-end-column="59" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1552403982512" expanded="true" signature="4834:4843" ph="..." />
+                <marker date="1553958520536" expanded="true" signature="610:799" ph="..." />
+                <marker date="1553958520536" expanded="true" signature="5225:5234" ph="..." />
+                <marker date="1553958520536" expanded="true" signature="19636:19665" ph="..." />
               </folding>
             </state>
           </provider>
@@ -107,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frame_stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="51">
               <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -121,11 +134,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="-147">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
-                <marker date="1552311307328" expanded="true" signature="25:30" ph="..." />
-                <marker date="1552311307328" expanded="true" signature="77:121" ph="..." />
+                <marker date="1553946861322" expanded="true" signature="25:30" ph="..." />
+                <marker date="1553946861322" expanded="true" signature="77:121" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,16 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setvar</find>
-      <find>todo do</find>
-      <find>create</find>
-      <find>bad la</find>
-      <find>to</find>
-      <find>get_ar</find>
-      <find>move</find>
-      <find>label</find>
-      <find>sub</find>
-      <find>jump_co</find>
       <find>jump</find>
       <find>writ</find>
       <find>IDI</find>
@@ -170,8 +173,18 @@
       <find>int2</find>
       <find>stri2</find>
       <find>+++---///+++</find>
-      <find>exit</find>
       <find>interpret_re</find>
+      <find>ver</find>
+      <find>print(</find>
+      <find>esca</find>
+      <find>verb</find>
+      <find>input(</find>
+      <find>read</find>
+      <find>read(</find>
+      <find>id</find>
+      <find>exit</find>
+      <find>exit&quot;</find>
+      <find>konex</find>
     </findStrings>
     <replaceStrings>
       <replace>return self</replace>
@@ -180,6 +193,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -188,8 +206,9 @@
         <option value="$PROJECT_DIR$/arg_parser.py" />
         <option value="$PROJECT_DIR$/frame_stack.py" />
         <option value="$PROJECT_DIR$/frame.py" />
-        <option value="$PROJECT_DIR$/interpret.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/interpret.py" />
+        <option value="$PROJECT_DIR$/interpret_class.py" />
       </list>
     </option>
   </component>
@@ -200,10 +219,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-45" />
-    <option name="y" value="-45" />
-    <option name="width" value="1961" />
-    <option name="height" value="1060" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -275,8 +293,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="--source=stack_test.src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpret.py" />
+      <option name="PARAMETERS" value="--source=$PROJECT_DIR$/tests/int/sudeliche.src --input=$PROJECT_DIR$/tests/int/sudeliche.in" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -371,13 +389,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/interpret.py</url>
-          <line>429</line>
+          <url>file://$PROJECT_DIR$/interpret_class.py</url>
+          <line>445</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/interpret.py</url>
-          <line>170</line>
+          <url>file://$PROJECT_DIR$/interpret_class.py</url>
+          <line>186</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
@@ -399,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="585" selection-start-line="585" selection-end-line="585" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -420,30 +431,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-453134847/_elementtree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="151">
+          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interpret.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/xml/etree/ElementTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+        <state relative-caret-position="143">
+          <caret line="596" column="46" lean-forward="true" selection-start-line="596" selection-start-column="46" selection-end-line="596" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1552403982512" expanded="true" signature="4834:4843" ph="..." />
+            <marker date="1553946861322" expanded="true" signature="25:30" ph="..." />
+            <marker date="1553946861322" expanded="true" signature="77:121" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frame_stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="51">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -453,13 +475,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame.py">
+    <entry file="file://$PROJECT_DIR$/interpret.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state relative-caret-position="128">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
-            <marker date="1552311307328" expanded="true" signature="25:30" ph="..." />
-            <marker date="1552311307328" expanded="true" signature="77:121" ph="..." />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpret_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="476" column="59" selection-start-line="476" selection-start-column="59" selection-end-line="476" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1553958520536" expanded="true" signature="610:799" ph="..." />
+            <marker date="1553958520536" expanded="true" signature="5225:5234" ph="..." />
+            <marker date="1553958520536" expanded="true" signature="19636:19665" ph="..." />
           </folding>
         </state>
       </provider>

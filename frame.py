@@ -8,7 +8,7 @@ class Frame:
         self.frame_variables = dict()
 
     def set_var(self, variable, value, var_type):
-        print("**",self.frame_variables[variable], file=sys.stderr)
+       # print("**",self.frame_variables[variable], file=sys.stderr)
         self.frame_variables[variable]["value"] = value
         self.frame_variables[variable]["type"] = var_type
         if variable not in self.frame_variables.keys() or not self.frame_variables[variable]["defined"]:
@@ -21,7 +21,7 @@ class Frame:
             print("Redeclaration err", file=sys.stderr)
 
     def get_var(self, variable):
-        print("*******get_var in frame", variable, self.frame_variables)
+        #print("*******get_var in frame", variable, self.frame_variables)
         try:
             return self.frame_variables[variable]
         except KeyError:
