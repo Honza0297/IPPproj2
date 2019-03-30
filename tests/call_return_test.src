@@ -1,0 +1,11 @@
+.IPPcode19 # should write 0KONEC
+DEFVAR GF@a
+MOVE GF@a int@0
+LABEL label
+WRITE GF@a
+ADD GF@a GF@a int@1
+RETURN
+CALL label
+WRITE string@KONEC
+EXIT int@666
+

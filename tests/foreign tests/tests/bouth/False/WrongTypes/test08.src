@@ -1,0 +1,9 @@
+#HUEHUE
+.ippcode19 #HUE
+#UHE
+defvar GF@op1
+defvar GF@op2
+move GF@op1 string@5
+move GF@op2 int@5
+
+add GF@op1 GF@op1 GF@op2

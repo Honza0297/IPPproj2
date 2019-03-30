@@ -1,0 +1,7 @@
+#HUEHUE
+.ippcode19 #HUE
+#UHE
+
+label hello
+
+jumpifneq hello int@5 GF@hue

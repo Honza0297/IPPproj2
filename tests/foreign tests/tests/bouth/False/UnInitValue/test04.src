@@ -1,0 +1,11 @@
+#HUEHUE
+.ippcode19 #HUE
+#UHE
+
+createframe
+defvar TF@hue
+pushframe
+add LF@hue LF@hue int@5
+defvar LF@hello
+popframe
+add TF@hue TF@hello TF@hue

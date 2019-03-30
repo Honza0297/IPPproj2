@@ -1,0 +1,12 @@
+.IPPcode19 #comment
+#.IFJcode18
+
+DEFVAR GF@var #commenterino
+defvar GF@string
+
+move GF@string string@HelloWorld
+move GF@var int@10
+
+defvar GF@result
+
+setchar GF@string GF@var string@h

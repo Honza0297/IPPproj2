@@ -1,0 +1,20 @@
+#read
+#.IFJcode18 #FOR testing only with the standart interpret
+.IPPcode19
+
+defvar GF@str1
+read GF@str1 string
+
+defvar GF@op1
+read GF@op1 int
+
+defvar GF@str2
+read GF@str2 string
+
+write GF@str1
+write GF@str2
+write string@\010
+
+add GF@op1 GF@op1 int@-3
+write GF@op1
+write string@\010

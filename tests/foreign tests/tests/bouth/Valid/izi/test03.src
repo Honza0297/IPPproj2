@@ -1,0 +1,11 @@
+.IPPcode19
+createframe
+defvar TF@_var1
+pushframe
+move LF@_var1 string@Hello
+defvar GF@final
+move GF@final LF@_var1
+move LF@_var1 string@World
+concat GF@final GF@final LF@_var1
+concat GF@final GF@final string@\010
+write GF@final

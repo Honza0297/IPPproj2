@@ -1,0 +1,5 @@
+.IPPcode19 #comment
+#.IFJcode18
+DEFVAR GF@var #commenterino
+int2char GF@var int@-1
+write GF@var

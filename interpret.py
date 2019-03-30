@@ -132,7 +132,15 @@ class Interpreter:
         elif opcode == "TYPE":
             return self.type(self.get_arg(instruction, 1), self.get_arg(instruction, 2))
         elif opcode == "CALL":
-            return self.call(instruction)  # Because we need an order number of the instruction
+           ret_value = self.call(instruction)  # Because we need an order number of the instruction
+           if ret_value < 0:  # menas err
+                if ret_value == -1:
+                    return 0
+                return -ret_value
+           else:
+                jump[0] = True
+                jump[1] = ret_value
+                return 0
         elif opcode == "PUSHS":
             return self.pushs(self.get_arg(instruction, 1))
         elif opcode == "POPS":
@@ -142,6 +150,7 @@ class Interpreter:
         elif opcode == "LABEL":
             return 0
         elif opcode == "EXIT":
+            print("EEEEEEXXXXXXXXXXXXXIIIIIIIIIIIIIITTTTTTTTTTTTT",self.get_value(self.get_arg(instruction, 1)))
             return self.get_value(self.get_arg(instruction, 1))
         elif opcode == "DPRINT":
             return self.dprint(self.get_arg(instruction, 1))
@@ -152,7 +161,13 @@ class Interpreter:
         elif opcode == "POPFRAME":
             return self.popframe()
         elif opcode == "RETURN":
-            return self.interpret_return()
+            ret_value = self.interpret_return()
+            if ret_value == -1:  # menas err
+                return 0
+            else:
+                jump[0] = True
+                jump[1] = ret_value
+                return 0
         elif opcode == "BREAK":
             return self.interpret_break(instruction)  # prints some info about instruction, so i give it whole
         else:
@@ -358,7 +373,6 @@ class Interpreter:
             return 0
 
     def strlen(self, dst_len, string):
-
         print("RRRRRRRRRRRR", string)
         string_value = self.get_value(string)
         self.setvar(dst_len, len(string_value), "int")
@@ -372,16 +386,20 @@ class Interpreter:
 
     def call(self, instruction):
         """call with support of return"""
+        print("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCall",instruction.attrib["order"] )
         label = self.get_arg(instruction, 1)
         if label.text in self.labels.keys():
-            self.return_stack.append(instruction.attrib["order"])
+            self.return_stack.append(int(instruction.attrib["order"]))
             return self.labels[label.text]
         else:
-            return -1
+            return -52 # bad label
 
     def interpret_return(self):
-        """Just return. No need to check if there is a value in stack, cause last poped value will be alway -1,
-        which usually means an error"""
+        """Just return. """
+        print("RETURN????????????????????????????????????????", len(self.return_stack))
+        if len(self.return_stack) == 1:
+            return -1
+        print("RRRRRRRRReturn", self.return_stack)
         return self.return_stack.pop(-1)
 
     def popframe(self):
@@ -425,7 +443,7 @@ class Interpreter:
 
     def write(self, src):
         print("***+++---///+++---***///WRITE",self.get_value(src))
-        print(self.get_value(src))
+        print(self.get_value(src), end="")
         return 0
 
     def pushs(self, src):

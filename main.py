@@ -29,10 +29,18 @@ while current <= instruction_count:
     print("++++++++++++++++++++++++++++++++++++++++++", instructions[current].attrib["opcode"],  "****")
     return_value = interpret.interpret_instruction(instructions[current])
     print("++++++++++++++++++++++++++++++++++++++++++", instructions[current].attrib["opcode"], return_value, "+++++")
+    print("_____________________________________________________________________________________________",
+          type(return_value), return_value)
     if type(return_value) == int:
         next_instruction = return_value
         print("ret:", return_value)
+    elif type(return_value) == tuple:
+        if(return_value[0]) > 0:
+            print("An error has occured", file=sys.stderr)
+            exit(return_value[0])
+        else:
+            next_instruction = return_value[0]
     else:
-        print("An error has occured", file=sys.stderr)
-        exit(return_value)
+        print("An error has occured – order number of next instruction was not given properly", file=sys.stderr)
+        exit(99)
     current = next_instruction

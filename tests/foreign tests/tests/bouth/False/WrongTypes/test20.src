@@ -1,0 +1,11 @@
+#HUEHUE
+.ippcode19 #HUE
+#UHE
+defvar GF@op1
+move GF@op1 string@HelloWorld
+
+defvar GF@op2
+move GF@op2 bool@true
+
+defvar GF@res
+concat GF@res GF@op1 GF@op2

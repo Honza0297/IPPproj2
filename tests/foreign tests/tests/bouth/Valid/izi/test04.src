@@ -1,0 +1,96 @@
+#MATH TEST
+#.IFJcode18
+.IPPcode19
+createframe
+pushframe
+defvar GF@op1
+defvar GF@op2
+move GF@op1 int@10
+move GF@op2 int@5
+
+pushs GF@op2
+pushs GF@op1
+call _add
+
+pushs GF@op2
+pushs GF@op1
+call sub
+
+pushs GF@op2
+pushs GF@op1
+call mul
+
+pushs GF@op2
+pushs GF@op1
+call div
+
+popframe
+exit int@0
+
+#ADDING
+label _add
+createframe
+pushframe
+defvar LF@op1
+defvar LF@op2
+pops LF@op1
+pops LF@op2
+add LF@op1 LF@op1 LF@op2
+pushs LF@op1
+call !print
+popframe
+return
+
+#MUTIPLY
+label mul
+createframe
+pushframe
+defvar LF@op1
+defvar LF@op2
+pops LF@op1
+pops LF@op2
+mul LF@op1 LF@op1 LF@op2
+pushs LF@op1
+call !print
+popframe
+return
+
+#DIVIDING STUFFS
+label div
+createframe
+pushframe
+defvar LF@op1
+defvar LF@op2
+pops LF@op1
+pops LF@op2
+idiv LF@op1 LF@op1 LF@op2
+pushs LF@op1
+call !print
+
+popframe
+return
+
+#SUBTRACTING
+label sub
+createframe
+pushframe
+defvar LF@op1
+defvar LF@op2
+pops LF@op1
+pops LF@op2
+sub LF@op1 LF@op1 LF@op2
+pushs LF@op1
+call !print
+popframe
+return
+
+##PRINTFUNCTION
+label !print
+createframe
+pushframe
+defvar LF@stuff
+pops LF@stuff
+write LF@stuff
+write string@\010
+popframe
+return

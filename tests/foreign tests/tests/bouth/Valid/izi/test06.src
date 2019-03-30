@@ -1,0 +1,47 @@
+#MATH TEST
+#.IFJcode18 #FOR testing only with the standart interpret
+.IPPcode19
+createframe
+pushframe
+defvar GF@op1
+defvar GF@op2
+
+move GF@op1 string@helloWorld
+move GF@op2 string@worldHello
+jumpifneq isNotEqual GF@op1 GF@op2
+label loop1
+defvar GF@strlen1
+defvar LF@strlen2
+strlen LF@strlen2 GF@op1
+strlen GF@strlen1 GF@op2
+
+jumpifeq isEqual LF@strlen2 GF@strlen1
+
+
+popframe
+exit int@0
+
+label isNotEqual
+pushs string@NotEqual
+call !print
+jump loop1
+
+return
+
+label isEqual
+pushs string@IsEqual
+call !print
+exit int@0
+return
+
+
+##PRINTFUNCTION
+label !print
+createframe
+pushframe
+defvar LF@stuff
+pops LF@stuff
+write LF@stuff
+write string@\010
+popframe
+return

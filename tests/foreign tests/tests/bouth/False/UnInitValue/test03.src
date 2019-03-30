@@ -1,0 +1,7 @@
+#HUEHUE
+.ippcode19 #HUE
+#UHE
+
+createframe
+defvar TF@hue
+add TF@hue TF@hue int@5

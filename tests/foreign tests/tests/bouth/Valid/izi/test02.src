@@ -1,0 +1,28 @@
+.IPPcode19
+call foo
+createframe
+defvar TF@a
+pushframe
+move LF@a int@10
+write LF@a
+write string@\010
+popframe
+write TF@a
+write string@\010
+write string@řetězec\032s\032lomítkem\032\092\032a\010novým\035řádkem
+write string@\010
+
+exit int@0
+
+
+label foo
+createframe
+defvar TF@a
+pushframe
+move LF@a int@5
+write LF@a
+write string@\010
+popframe
+write TF@a
+write string@\010
+return

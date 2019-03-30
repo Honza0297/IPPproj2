@@ -1,0 +1,102 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[czech]{babel}
+\usepackage{times}
+\usepackage[text={17cm,24cm}, top=3cm, left=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\setlength{\headheight}{20.0mm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{graphics}
+\usepackage {array}
+\usepackage{pdflscape}
+\usepackage[czech, ruled, vlined, linesnumbered, longend, noline]{algorithm2e}
+\usepackage{multirow}
+
+\begin{document}
+\catcode`\-=12 %Mělo by to vyřešit problém s cline... jestli ne, tak už nevím
+%Uvodni strana
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\scalebox{0.5}{\includegraphics{logo.png}}}
+\fancyhead[L]{\Large Jan Beran\\ \texttt{xberan43}\\ \today}
+
+\setlength{\parindent}{0mm}
+\large{\textbf{Implementační dokumentace ke 2. a 3. úloze do IPP 2018/2019}}\\\
+\large{\textbf{Jméno a příjmení: Jan Beran}}\\\
+\large{\textbf{Login: xberan43}}\\\
+
+\large{\textbf{Úvod}}\\\
+Tato dokumentace stručně popisuje skripty interpret.py a test.php.\\
+
+\large{{\textbf{Zadání}}\\
+Zadáním bylo vytvořit dva skripty; interpret jazyka IPPcode19 převedeného do XML a testovací rámec jak pro interpret, tak pro parser, který byl součástí prvního odevzdání. Pro interpret byl specifikovaným jazykem Python 3.6, pro testovací rámec PHP7.3.\\
+
+\large{{\textbf{Implementace interpretu}}\\
+Interpret je implementován s využitím objektově orientovaných principů, které výrazně usnadnily celou tvorbu skriptu. V mém návrhu je hlavním objektem objekt interpret, starající se o samostatnou interpretaci kódu. Rámce pro proměnné a jejich zásobník byly též implementovány jako samostatné objekty.\\
+Interpret na vstupu přijímá XML podobu IPPcode19 a vstupní hodnoty pro interpretací kódu a na výstupu vypíše výstup interpretovanéh kódu, případně chybové hlášení, pokud se interpretovaný kód nebo sám interpret dostane do chybového stavu.\\
+
+
+\large{{\textbf{Spouštění interpretu}}\\
+Skript se spouští pomocí příkazové řádky jako skript v jazyce Python3. Pracuje s několika parametry:\\
+\begin{itemize}
+	\item -{}-help: Vypsání krátké nápovědy k programu
+	\item -{}-source=\textit{source}: specifikuje soubor pro XML reprezentaci IPPcode19, ze kterého mají být načítána data
+	\item -{}input=\textit{input}: specifikuje soubor se vstupy pro interpretovaný kód
+\end{itemize}
+Vždy alespoň jeden z dvojice posledně zmíněných parametrů musí být zadán. Pokud jeden z parametrů chybí, příslušná data se načítají ze standardního vstupu.\\
+
+\large{{\textbf{Implementace testovacího rámce}}\\
+Testovací rámec je implementován funkcionálně s důrazem na znovupoužitelnost pro další projekty, jelikož tento skript plánují využívat i pro testování dalších projektů, bude-li to vhodné. Kromě serveru Merlin, který jsem považoval za referenční stroj, skript funguje (a byl testován) i pod OS Windows, a to z výše zmíněného důvodu. \\
+\newpage
+\large{{\textbf{Spouštění testovacího rámce}}\\
+Aplikace se spouští pomocí příkazové řádky jako skript pro PHP7.3. Pracuje s několika parametry:\\
+\begin{itemize}
+	\item -{}-help: Vypsání krátké nápovědy k programu
+	\item -{}-recursive: Zda mají být při hledání testů prohledávány i podsložky
+	\item -{}-directory=\textit{path}: Určení složky, ve které se nacházejí testy. Při absenci tohoto přepínače se testy hledají v aktuálním umístění.
+	\item -{}-parse-script=\textit{file}: Určení cesty k analyzátoru zdrojového kódu parse.php. Při absenci přepínače bude skript hledán v aktuálním adresáři.
+	\item -{}-int-script=\textit{file}:Určení cesty k interpretu zdrojového kódu interpret.py. Při absenci přepínače bude skript hledán v aktuálním adresáři.
+	\item -{}-parse-only: Při tomto přepínači se bude testovat pouze skript pro analýzu zdrojovéh kódu. Nesmí se kombinovat s přepínači -{}-int-script nebo -{}-int-only.
+	\item -{}-int-only: Při tomto přepínači se bude testovat pouze skript pro interpretaci zdrojovéh kódu. Nesmí se kombinovat s přepínači -{}-parse-script nebo -{}-parse-only.
+\end{itemize}
+\large{{\textbf{Závěr}}\\
+Skripty byly implementovány samostatně a odpovídají všem náležitostem zadání.\\
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

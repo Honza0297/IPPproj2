@@ -1,0 +1,3 @@
+.ippcode19
+write string@hue
+mov GF@hue
